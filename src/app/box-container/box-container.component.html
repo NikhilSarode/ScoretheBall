@@ -1,0 +1,8 @@
+
+<div *ngFor="let i of arrayNum(); let ind=index ">
+  <app-ball [count]="ind+1" (score)="showScore($event)"></app-ball>
+  </div>
+  
+  <button (click)=onClick()>Drop</button><br><br><br>
+  Score
+  <input type="text" value="{{addScore}}">
